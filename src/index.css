@@ -11,3 +11,154 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-gap: 10px;
+}
+
+.container>* {
+  padding: 0 5%;
+}
+
+nav {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  width: fit-content;
+  grid-column: 7/span 4;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1.5rem;
+
+}
+
+nav img {
+  grid-column: 3/span 4;
+}
+
+main {
+  grid-column: 1/13;
+  grid-row: 2/3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #495E57;
+  align-items: center;
+}
+
+main h1,
+main h2 {
+  margin: 0;
+  color: #F4CE14;
+}
+
+#imgcont {
+  width: 200px;
+}
+
+main img {
+  max-width: 100%;
+}
+
+main button {
+  background-color: #F4CE14;
+  color: black;
+  border-radius: 16px;
+  height: fit-content;
+  box-shadow: 5px 5px 5px;
+  padding: 10px;
+}
+
+
+
+#section1 {
+  grid-column: 1/span 12;
+  grid-row: 3/span 1;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding-bottom: 1em;
+  align-items: center;
+}
+
+#section1 h2 {
+  grid-column: span 2;
+  justify-self: start;
+}
+
+#section1 button {
+  background-color: #F4CE14;
+  color: black;
+  border-radius: 16px;
+  height: fit-content;
+  padding: 10px;
+  box-shadow: 5px 5px 5px;
+}
+
+.card {
+  width: 250px;
+  background-color: #EDEFEE;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+#section2 {
+  grid-column: 1/span 12;
+  grid-row: 4/span 1;
+}
+
+#section3 {
+  grid-column: 1/span 12;
+  grid-row: 5/span 1;
+}
+
+footer {
+  grid-column: 1/span 12;
+  grid-row: 6/ span 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li:first-child {
+  list-style: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+
+  .card {
+    grid-column: span 3;
+  }
+
+  #section1 h2 {
+    grid-column: span 2;
+    justify-self: center;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+}

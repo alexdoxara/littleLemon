@@ -1,6 +1,9 @@
 const Section2 = () => {
     return (
-        <p>I am section two</p>
+        <section2 id="section2">
+            <p>I am section two</p>
+        </section2>
+
     )
 }
 
