@@ -1,7 +1,9 @@
+import logo from "./assets/Logo.svg"
+
 const Footer = () => {
     return (
         <footer>
-            <img />
+            <img src={logo} />
             <ul>
                 <li>Doorma Navigation</li>
                 <li>Home</li>

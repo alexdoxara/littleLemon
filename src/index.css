@@ -7,6 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -60,17 +66,35 @@ main {
 }
 
 main h1,
-main h2 {
+main h2,
+#section3 h1,
+#section3 h2 {
   margin: 0;
   color: #F4CE14;
 }
 
+.imgcont {
+  width: 300px;
+
+}
+
 #imgcont {
-  width: 200px;
+  max-width: 20%;
+}
+
+.imgcont img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 main img {
   max-width: 100%;
+}
+
+#img2 {
+  position: relative;
+  bottom: 214px;
+  right: 228px;
 }
 
 main button {
@@ -93,11 +117,29 @@ main button {
   justify-items: center;
   padding-bottom: 1em;
   align-items: center;
+  gap: 10px;
 }
 
 #section1 h2 {
   grid-column: span 2;
   justify-self: start;
+}
+
+.testi {
+  padding: 0 1em;
+  max-width: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #EDEFEE;
+}
+
+.star {
+  grid-column: 1/-1;
+}
+
+.review {
+  grid-column: 1/-1;
+
 }
 
 #section1 button {
@@ -123,11 +165,25 @@ main button {
 #section2 {
   grid-column: 1/span 12;
   grid-row: 4/span 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 10px;
 }
+
+#section2 h2 {
+  grid-column: 1/-1;
+}
+
+
 
 #section3 {
   grid-column: 1/span 12;
   grid-row: 5/span 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 10px;
 }
 
 footer {
@@ -146,7 +202,16 @@ footer ul li:first-child {
   font-weight: bold;
 }
 
-@media screen and (max-width: 750px) {
+.avatar {
+  width: 55px;
+}
+
+footer img {
+  align-self: center;
+}
+
+
+@media screen and (max-width: 800px) {
 
   .card {
     grid-column: span 3;
@@ -161,4 +226,32 @@ footer ul li:first-child {
     display: none;
   }
 
+  .testi {
+    grid-column: span 2;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .card {
+    grid-column: span 3;
+  }
+
+  #section1 h2 {
+    grid-column: span 2;
+    justify-self: center;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .testi {
+    grid-column: 1/-1;
+  }
+
+  #section3 div {
+    grid-column: 1/-1;
+  }
 }
