@@ -7,22 +7,21 @@ const Section3 = () => {
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
                 <p>
-                    Lorem ipsum dolor sit amet,<br></br>
-                    consectetur adipiscing elit, <br></br>
-                    sed do eiusmod tempor incididunt <br></br>
-                    ut labore et dolore magna aliqua.
+                    Mario and Adrian are talented chefs who cook diverse cuisines
+                    from around the world. They use amazing flavors, skills and
+                    creativity to make delicious and beautiful dishes.
                 </p>
             </div>
 
-            <div>
+            <div id="imgprt">
                 <div id="img1" className="imgcont">
                     <img src={mariob}></img>
 
                 </div>
 
-                {/* <div id="img2" className="imgcont">
+                <div id="img2" className="imgcont">
                     <img src={marioa}></img>
-                </div> */}
+                </div>
             </div>
         </section3>
 

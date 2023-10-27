@@ -6,10 +6,10 @@ const Main = () => {
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
                 <p>
-                    Lorem ipsum dolor sit amet,<br></br>
-                    consectetur adipiscing elit, <br></br>
-                    sed do eiusmod tempor incididunt <br></br>
-                    ut labore et dolore magna aliqua.
+                    Little Lemon is a charming neighborhood
+                    bistro that serves simple food and classic cocktails
+                    in a lively but casual enviroment. The restaurant
+                    features a locally-sourced menu with daily specials
                 </p>
                 <button>Reserve a table</button>
             </div>

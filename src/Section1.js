@@ -10,7 +10,7 @@ const Section1 = () => {
             <div class="card">
                 <img src={salad}></img>
                 <h3>Greek Salad</h3>
-                <p>price: 12.99$</p>
+                <p className='price'>price: 12.99$</p>
                 <p>The famous greek salad
                     crispy lettuce,peppers,
                     olives and our Chicago style
@@ -25,7 +25,7 @@ const Section1 = () => {
             <div class="card">
                 <img src={brucheta}></img>
                 <h3>bruchetta</h3>
-                <p>price: 5.99$</p>
+                <p className='price'>price: 5.99$</p>
                 <p>Our Bruschetta is made from
                     grilled bread that has been
                     smeared with garlic and
@@ -41,7 +41,7 @@ const Section1 = () => {
             <div class="card">
                 <img src={lemon}></img>
                 <h3>Lemon Dessert</h3>
-                <p>price: 5$</p>
+                <p className='price'>price: 5$</p>
                 <p>This comes straight from
                     grandma's recipe book,every
                     last ingredient has been
