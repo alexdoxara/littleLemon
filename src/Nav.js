@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import logo from "./assets/Logo.svg"
 
 export default function Nav() {
@@ -6,10 +7,10 @@ export default function Nav() {
 
             <img src={logo} />
             <ul>
-                <li><a>Home</a></li>
+                <li><Link to='/'>Home</Link></li>
                 <li>About</li>
                 <li>Menu</li>
-                <li>Reservations</li>
+                <li><Link to='/book'>Reservations</Link></li>
                 <li>Order Online</li>
                 <li>Log in</li>
             </ul>
